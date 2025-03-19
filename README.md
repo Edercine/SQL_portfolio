@@ -1,6 +1,10 @@
 # SQL_portfolio
 Requêtage d'une base de donnée sur Mysql 
 
+
+## Shéma de la base donnée
+![](https://github.com/Edercine/SQL_portfolio/blob/main/SQL%20schema%20relation%20de%20donn%C3%A9es.png)
+
 /*******************************************************************************
 
 Clients non américains : Fournissez une requête affichant les
