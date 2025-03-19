@@ -90,6 +90,7 @@ factures associées à chaque agent de vente
 
 
 /*******************************************************************************
+
 Détails des factures : Fournissez une requête affichant le total de
 chaque facture, le nom du client, le pays et le nom de l'agent de vente
 
@@ -105,6 +106,7 @@ chaque facture, le nom du client, le pays et le nom de l'agent de vente
     WHERE employee.Title = "Sales Support Agent";
 
 /*******************************************************************************
+
 Ventes par année : Combien de factures y a-t-il eu en 2009 et
 2011 ? Quels sont les montants totaux des ventes pour chacune de ces années ?
 
@@ -116,6 +118,7 @@ Ventes par année : Combien de factures y a-t-il eu en 2009 et
     GROUP BY annee;
 
 /*******************************************************************************
+
 Articles pour une facture donnée : Fournissez une requête
 comptant le nombre d'articles (line items) pour l'ID de facture 37.
 
@@ -127,6 +130,7 @@ comptant le nombre d'articles (line items) pour l'ID de facture 37.
     WHERE CustomerId = '37';
 
 /*******************************************************************************
+
 Articles par facture : Fournissez une requête comptant le nombre
 d'articles (line items) pour chaque facture 
 
@@ -138,6 +142,7 @@ d'articles (line items) pour chaque facture
     GROUP BY CustomerId;
 
 /*******************************************************************************
+
 Nom des morceaux : Fournissez une requête incluant le nom du
 morceau pour chaque ligne de facture
 
@@ -153,6 +158,7 @@ morceau pour chaque ligne de facture
     ORDER BY CustomerId ASC;
 
 /*******************************************************************************
+
 Morceaux et artistes : Fournissez une requête incluant le nom du
 morceau acheté ET le nom de l'artiste pour chaque ligne de facture 
 
@@ -170,6 +176,7 @@ morceau acheté ET le nom de l'artiste pour chaque ligne de facture
     ORDER BY CustomerId ASC;
 
 /*******************************************************************************
+
 Nombre de factures par pays : Fournissez une requête affichant
 le nombre de factures par pays
 
@@ -183,6 +190,7 @@ le nombre de factures par pays
     ORDER BY nb_factures DESC;
 
 /*******************************************************************************
+
 Nombre de morceaux par playlist : Fournissez une requête
 affichant le nombre total de morceaux dans chaque playlist.
 Le nom de la playlist doit être inclus dans le tableau résultant
@@ -200,6 +208,7 @@ Le nom de la playlist doit être inclus dans le tableau résultant
     ORDER BY nb_titre DESC;
 
 /*******************************************************************************
+
 Liste des morceaux : Fournissez une requête affichant tous les
 morceaux (Tracks), mais sans afficher les IDs.
 Le tableau résultant doit inclure le nom de l'album, le type de média et le genre
@@ -216,6 +225,7 @@ Le tableau résultant doit inclure le nom de l'album, le type de média et le ge
     LEFT JOIN mediatype ON mediatype.MediaTypeId = track.MediaTypeId;
 
 /*******************************************************************************
+
 Factures et articles : Fournissez une requête affichant toutes les
 factures, avec le nombre d'articles par facture
 
@@ -229,6 +239,7 @@ factures, avec le nombre d'articles par facture
     GROUP BY invoice.InvoiceId;
 
 /*******************************************************************************
+
 Ventes par agent de vente : Fournissez une requête affichant les
 ventes totales réalisées par chaque agent de vente
 
@@ -242,6 +253,7 @@ ventes totales réalisées par chaque agent de vente
     GROUP BY employee.EmployeeId;
 
 /*******************************************************************************
+
 Meilleur agent de 2009 : Quel agent de vente a réalisé le plus de
 ventes en 2009 ?
 
@@ -255,6 +267,7 @@ ventes en 2009 ?
     GROUP BY EmployeeId, annee;
 
 /*******************************************************************************
+
 Meilleur agent global : Quel agent de vente a réalisé le plus de
 ventes en tout ?
 
@@ -272,6 +285,7 @@ ventes en tout ?
     LIMIT 1;
 
 /*******************************************************************************
+
 Classement des ventes total des agents de vente par année
 
 
@@ -290,6 +304,7 @@ Classement des ventes total des agents de vente par année
     GROUP BY EmployeeId, annee;
 
 /*******************************************************************************
+
 Avec la requete précédente récupérer unique les 2 meilleurs des agents de vente par année
 
 
